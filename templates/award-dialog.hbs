@@ -1,0 +1,57 @@
+<div class="scorpxp-dialog">
+  {{#if isEncounter}}
+  <div class="scorpxp-banner">
+    <i class="fa-solid fa-swords"></i>
+    <span>{{localize "SCORPXP.Dialog.EncounterBanner"}} <strong>{{rating}}</strong></span>
+  </div>
+  {{/if}}
+
+  <div class="form-group">
+    <label>{{localize "SCORPXP.Dialog.AwardType"}}</label>
+    <select name="awardType">
+      {{#if isEncounter}}
+      <option value="encounter" data-xp="{{encounterXp}}" selected>
+        {{localize "SCORPXP.Preset.Encounter"}} ({{encounterXp}} XP)
+      </option>
+      {{/if}}
+      {{#each presets}}
+      <option value="{{this.key}}" data-xp="{{this.xp}}">{{this.label}} ({{this.xp}} XP)</option>
+      {{/each}}
+      <option value="custom" data-xp="">{{localize "SCORPXP.Preset.Custom"}}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "SCORPXP.Dialog.Reason"}}</label>
+    <input type="text" name="reason" value="{{reason}}"
+      placeholder="{{localize 'SCORPXP.Dialog.ReasonPlaceholder'}}" />
+  </div>
+
+  <div class="form-group">
+    <label>{{localize "SCORPXP.Dialog.XPPerCharacter"}}</label>
+    <input type="number" name="xp" value="{{xp}}" min="0" step="1" {{#if isEncounter}}readonly{{/if}} />
+  </div>
+
+  <fieldset class="scorpxp-recipients">
+    <legend>
+      {{localize "SCORPXP.Dialog.Recipients"}}
+      <a data-action="toggleAll" class="scorpxp-toggle-all">{{localize "SCORPXP.Dialog.ToggleAll"}}</a>
+    </legend>
+    {{#each recipients}}
+    <label class="scorpxp-recipient">
+      <input type="checkbox" name="recipient" value="{{this.id}}" checked />
+      <img src="{{this.img}}" alt="{{this.name}}" />
+      <span class="scorpxp-recipient-name">{{this.name}}</span>
+      <span class="scorpxp-recipient-meta">Lv {{this.level}} &middot; {{this.xp}}/1000 XP</span>
+    </label>
+    {{else}}
+    <p class="notification warning">{{localize "SCORPXP.Dialog.NoRecipients"}}</p>
+    {{/each}}
+  </fieldset>
+
+  <footer class="scorpxp-footer">
+    <button type="submit" class="scorpxp-award-btn">
+      <i class="fa-solid fa-trophy"></i> {{localize "SCORPXP.Dialog.AwardButton"}}
+    </button>
+  </footer>
+</div>

@@ -1,0 +1,39 @@
+{
+  "id": "scorpious-pf2e-award-xp",
+  "title": "Scorpious187's PF2e Award XP",
+  "description": "Automatically calculates and awards XP for combat encounters in Pathfinder 2e, with a UI for granting XP for social encounters, accomplishments, or any custom reason.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "7"
+        }
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Scorpious187"
+    }
+  ],
+  "esmodules": [
+    "scripts/module.js"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ]
+}

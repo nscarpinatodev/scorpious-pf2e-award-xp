@@ -1,0 +1,32 @@
+{
+  "SCORPXP.Settings.AutoPrompt": "Prompt to award XP when combat ends",
+  "SCORPXP.Settings.AutoPromptHint": "When an encounter is ended (deleted), automatically calculate the XP and open the award dialog for the GM to confirm.",
+
+  "SCORPXP.Control.AwardXP": "Award XP",
+
+  "SCORPXP.Dialog.Title": "Award XP",
+  "SCORPXP.Dialog.EncounterBanner": "Encounter difficulty:",
+  "SCORPXP.Dialog.AwardType": "Award Type",
+  "SCORPXP.Dialog.Reason": "Reason",
+  "SCORPXP.Dialog.ReasonPlaceholder": "e.g. Negotiated peace with the guild",
+  "SCORPXP.Dialog.XPPerCharacter": "XP per character",
+  "SCORPXP.Dialog.Recipients": "Recipients",
+  "SCORPXP.Dialog.ToggleAll": "(toggle all)",
+  "SCORPXP.Dialog.AwardButton": "Award XP",
+  "SCORPXP.Dialog.NoRecipients": "No eligible characters found.",
+  "SCORPXP.Dialog.DefaultReason": "XP Award",
+
+  "SCORPXP.Preset.Encounter": "Combat Encounter",
+  "SCORPXP.Preset.Minor": "Minor Accomplishment",
+  "SCORPXP.Preset.Moderate": "Moderate Accomplishment",
+  "SCORPXP.Preset.Major": "Major Accomplishment",
+  "SCORPXP.Preset.Custom": "Custom",
+
+  "SCORPXP.Encounter.Reason": "Combat Encounter ({rating})",
+
+  "SCORPXP.Chat.Header": "XP Awarded",
+  "SCORPXP.Chat.Awarded": "Granted",
+
+  "SCORPXP.Error.InvalidAmount": "Please enter a valid XP amount greater than zero.",
+  "SCORPXP.Error.NoRecipients": "Select at least one character to receive XP."
+}
