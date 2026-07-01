@@ -23,6 +23,11 @@
       "name": "Scorpious187"
     }
   ],
+  "url": "https://github.com/nscarpinatodev/scorpious-pf2e-award-xp",
+  "readme": "https://github.com/nscarpinatodev/scorpious-pf2e-award-xp/blob/master/README.md",
+  "bugs": "https://github.com/nscarpinatodev/scorpious-pf2e-award-xp/issues",
+  "manifest": "https://github.com/nscarpinatodev/scorpious-pf2e-award-xp/releases/latest/download/module.json",
+  "download": "https://github.com/nscarpinatodev/scorpious-pf2e-award-xp/releases/download/v0.1.0/module.zip",
   "esmodules": [
     "scripts/module.js"
   ],
