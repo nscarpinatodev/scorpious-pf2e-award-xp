@@ -6,3 +6,6 @@ Thumbs.db
 # Node (if a build pipeline is added later)
 node_modules/
 dist/
+
+# Release artifact
+module.zip
